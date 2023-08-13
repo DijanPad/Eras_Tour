@@ -5,7 +5,9 @@ public class Comprador {
     private int numentries;
     private int budget;
 
-
+    Comprador(){
+        
+    }
     
     public String getName() {
         return name;

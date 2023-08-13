@@ -38,7 +38,7 @@ public class Ticket {
     }
 
     public void setCanBuy(boolean canBuy) {
-        if (this.numTic - this.minRank > 0 && this.maxRank - this.numTic > 0); {
+        if (this.numTic - this.minRank > 0 && this.maxRank - this.numTic > 0) {
             this.canBuy = true;
 
         } else {
