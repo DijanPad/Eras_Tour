@@ -6,7 +6,6 @@ public class Comprador {
     private int budget;
 
     Comprador(){
-        
     }
     
     public String getName() {

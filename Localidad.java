@@ -6,6 +6,8 @@ public class Localidad {
     private int dispSpace;
     private boolean kenoughMoney;
 
+    Localidad(){    
+    }
 
     public int getNumLoc() {
         return numLoc;
@@ -65,6 +67,7 @@ public class Localidad {
 
     public void buyEntries(){
         this.numLoc = this.numLoc - this.dispSpace;
+        System.out.println("Haz comprado " + this.dispSpace + " entradas.");
     }
 
 

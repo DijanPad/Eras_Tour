@@ -8,12 +8,14 @@ public class Ticket {
 
     Random random = new Random();
 
+    Ticket(boolean canBuy) {
+    }
 
     public int getNumTic() {
         return numTic;
     }
 
-    public void setNumTic(int numTic) {
+    public void setNumTic() {
         this.numTic = random.nextInt(14999)+1;
     }
 
@@ -21,7 +23,7 @@ public class Ticket {
         return maxRank;
     }
 
-    public void setMaxRank(int maxRank) {
+    public void setMaxRank() {
         this.maxRank = random.nextInt(14999)+1;
     }    
 
@@ -29,7 +31,7 @@ public class Ticket {
         return minRank;
     }
 
-    public void setMinRank(int minRank) {
+    public void setMinRank() {
         this.minRank = random.nextInt(14999)+1;
     }
 
@@ -37,8 +39,8 @@ public class Ticket {
         return canBuy;
     }
 
-    public void setCanBuy(boolean canBuy) {
-        if (this.numTic - this.minRank > 0 && this.maxRank - this.numTic > 0) {
+    public void setCanBuy() {
+        if ((this.numTic - this.minRank > 0) && (this.maxRank - this.numTic > 0)) {
             this.canBuy = true;
 
         } else {
@@ -46,6 +48,14 @@ public class Ticket {
         }
     }
 
-    
+    public void tostring() {
+        System.out.println("Tu numero de ticket es " + this.numTic);
+        if (this.canBuy == true){
+            System.out.println("Puedes comprar entradas");
+        } else {
+            System.out.println("No puedes comprar entradas");
+        }
+    }
+
 
 }
