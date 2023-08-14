@@ -1,3 +1,8 @@
+/** Programacion orientada a objetos -  seccion 10
+* Luis Francisco Padilla Juárez - 23663
+* Ejercicio 1, Overloading
+*  13-08-2023*/
+
 import java.util.Random;
 public class Ticket {
     
@@ -9,6 +14,7 @@ public class Ticket {
     Random random = new Random();
 
     Ticket(boolean canBuy) {
+        this.canBuy = canBuy;
     }
 
     public int getNumTic() {
@@ -42,12 +48,13 @@ public class Ticket {
     public void setCanBuy() {
         if ((this.numTic - this.minRank > 0) && (this.maxRank - this.numTic > 0)) {
             this.canBuy = true;
-
+            // validacion de ticket
         } else {
             this.canBuy = false;
         }
     }
 
+    //Metodo no previsto
     public void tostring() {
         System.out.println("Tu numero de ticket es " + this.numTic);
         if (this.canBuy == true){

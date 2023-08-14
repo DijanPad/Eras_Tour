@@ -1,3 +1,8 @@
+/** Programacion orientada a objetos -  seccion 10
+* Luis Francisco Padilla Juárez - 23663
+* Ejercicio 1, Overloading
+*  13-08-2023*/
+
 public class Localidad {
  
     private int numLoc;
@@ -6,7 +11,17 @@ public class Localidad {
     private int dispSpace;
     private boolean kenoughMoney;
 
+    //atributo no previsto (se utiliza solo para el tostring thou)
+    private String name;
+
     Localidad(){    
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getNumLoc() {
@@ -29,6 +44,7 @@ public class Localidad {
         return validSpace;
     }
 
+    //validacion super importante
     public void setValidSpace() {
         if(this.numLoc > 0 ) {
             validSpace = true;
@@ -56,6 +72,7 @@ public class Localidad {
         return kenoughMoney;
     }
 
+    //validacion del dinero, que corrige capacidad adquisitiva del usuario
     public void setKenoughMon(int budget) {
         if (budget >= (this.priceLoc*this.dispSpace)) {
             this.kenoughMoney = true;
@@ -65,9 +82,10 @@ public class Localidad {
         }
     }
 
+    //metodo no previsto para reducir el numero de entradas en cada localidad
     public void buyEntries(){
         this.numLoc = this.numLoc - this.dispSpace;
-        System.out.println("Haz comprado " + this.dispSpace + " entradas.");
+        System.out.println("Haz comprado " + this.dispSpace + " entradas en la " + this.name);
     }
 
 

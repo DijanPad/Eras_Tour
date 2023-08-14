@@ -1,3 +1,8 @@
+/** Programacion orientada a objetos -  seccion 10
+* Luis Francisco Padilla Juárez - 23663
+* Ejercicio 1, Overloading
+*  13-08-2023*/
+
 public class Comprador {
 
     private String name;
@@ -5,6 +10,10 @@ public class Comprador {
     private int numentries;
     private int budget;
 
+    //Comprador solo guarda datos para que se operen con el resto de objetos
+    // no hace nada importante como tal
+    //(por eso sus metodos son solo setters y getters)
+    
     Comprador(){
     }
     
