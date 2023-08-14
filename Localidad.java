@@ -88,7 +88,11 @@ public class Localidad {
         System.out.println("Haz comprado " + this.dispSpace + " entradas en la " + this.name);
     }
 
+    //metodo no previsto, control de caja
 
+    public void boxControl(){
+        System.out.println("Disponible: " + this.numLoc +" Localidad: " + this.name + " Precio: "+ this.priceLoc);
+    }
     
 
 

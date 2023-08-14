@@ -43,6 +43,7 @@ public class Eras_Tour {
     //Para que el se repita hasta que alguein decida no seguir compando, un while global
     while (run == true){
         System.out.println(erasTour);
+
         System.out.println("Ingresa tus datos para solicitar un ticket y tener la posibilidad de compar voletos.");
         
         //todas las interacciones en la interfaz
@@ -114,6 +115,10 @@ public class Eras_Tour {
         
 
     }
+    System.out.println("\n");
+    localidad1.boxControl();
+        localidad5.boxControl();
+        localidad10.boxControl();
     //sistema defensivo reciclado del Lab 1
     boolean flag = true;
     while (flag == true){
